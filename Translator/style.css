@@ -1,0 +1,138 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #355C7D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 690px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 30px;
+}
+
+.wrapper {
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+.wrapper .text-input {
+    display: flex;
+    flex-direction: column; /* Adjusted for better mobile display */
+    border-bottom: 1px solid #bbb;
+}
+
+.text-input .to-text {
+    border-radius: 5px;
+    border-left: none; /* Removed border on mobile */
+}
+
+.text-input textarea {
+    height: 150px; /* Adjusted height for mobile */
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+    border-radius: 5px;
+    background: none;
+    padding: 10px 15px;
+}
+
+.controls,
+li,
+.icons,
+.icons i {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls {
+    list-style: none;
+    padding: 12px 15px;
+}
+
+.controls .icons {
+    width: 100%; /* Adjusted for better mobile display */
+    margin-top: 10px; /* Added margin for spacing on mobile */
+}
+
+.controls .row.from .icons,
+.controls .row.to .icons {
+    padding: 0; /* Adjusted for better mobile display */
+    border: none; /* Removed border on mobile */
+}
+
+.controls .icons i {
+    width: 50px;
+    color: #9f9f9f;
+    font-size: 14px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.controls .row select {
+    width: 100%; /* Adjusted for better mobile display */
+    margin-top: 10px; /* Added margin for spacing on mobile */
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background: none;
+}
+
+.controls .exchange {
+    color: #9f9f9f;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    background: #5373f0;
+}
+  .navbar {
+    background-color: #333;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-content {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .navbar-name {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
